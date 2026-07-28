@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join Rhizobee Innovations. Explore open roles in payments engineering, merchant onboarding, DevOps, business development, and QA automation.",
+    "Join Rhizobee Innovations. Current openings include Enterprise Sales Manager, Reception cum Admin and HR, and Business Development Manager – Corporate Tie-ups (MICE).",
   alternates: { canonical: "/careers" },
 };
 
@@ -40,9 +40,9 @@ export default function CareersPage() {
         <Container>
           <SectionHeading eyebrow="Open Roles" title="Current openings" description={careers.ctaText} />
           <div className="mt-10 divide-y divide-line rounded-2xl border border-line bg-white">
-            {careers.openings.map((role) => (
+            {careers.openings.map((role, i) => (
               <a
-                key={role.title}
+                key={`${role.title}-${i}`}
                 href={`mailto:${company.email}?subject=${encodeURIComponent(
                   "Application: " + role.title
                 )}`}

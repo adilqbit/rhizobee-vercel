@@ -265,29 +265,28 @@ export const careers = {
   ],
   openings: [
     {
-      title: "Senior Full-Stack Engineer",
-      type: "Full-time · Mumbai / Remote",
-      summary: "Build and maintain the platforms behind our payment gateway, QR, and wallet products.",
+      title: "Enterprise Sales Manager",
+      type: "7 openings · Gurgaon, Bengaluru, Hyderabad, Chennai, Kolkata, Pune, Ahmedabad · CTC ₹7–12L",
+      summary:
+        "We are looking for an Enterprise Sales Manager – Merchant Acquiring to lead merchant acquisition across metro and tier-2 cities, driving growth in digital payment adoption. The role involves building and managing relationships with enterprise merchants, SMEs, and cooperative banks, achieving sales targets through structured pipelines, and promoting co-branded solutions such as QR codes, soundboxes, payment gateways, and POS devices. The ideal candidate will have 5–8 years of experience in fintech, payments, or banking, a strong merchant network, proven sales track record, and excellent communication and negotiation skills, with the ability to work independently and deliver results in a fast-paced environment.",
     },
     {
-      title: "Merchant Onboarding & Compliance Associate",
-      type: "Full-time · Mumbai",
-      summary: "Manage merchant onboarding, documentation, and compliance in line with partner-bank requirements.",
+      title: "Reception cum Admin and HR",
+      type: "1 opening · Marol, Mumbai · CTC ₹2–4L",
+      summary:
+        "We are seeking a Reception cum Admin & HR Executive to manage front-desk operations, provide administrative support, and assist in HR functions. The role includes handling calls and visitor management, coordinating office activities, maintaining records, supporting recruitment and onboarding processes, managing employee documentation, and ensuring smooth day-to-day operations. The ideal candidate should have strong communication and organizational skills, proficiency in MS Office, and the ability to multitask while maintaining professionalism and confidentiality.",
     },
     {
-      title: "DevOps / Cloud Engineer",
-      type: "Full-time · Mumbai / Remote",
-      summary: "Own infrastructure, uptime, and monitoring for transaction-critical payment systems.",
+      title: "Business Development Manager – Corporate Tie-ups (MICE)",
+      type: "Mumbai · CTC ₹3–7L",
+      summary:
+        "We are seeking a Business Development Manager – Corporate Tie-ups (MICE) to drive partnerships with corporates for Meetings, Incentives, Conferences, and Exhibitions. The role involves identifying and engaging corporate clients, building long-term relationships, and creating customized MICE solutions that align with client needs. The ideal candidate will have 4–7 years of experience in corporate sales or business development within hospitality, travel, or event management, strong negotiation and networking skills, and a proven ability to deliver revenue growth through strategic tie-ups and client acquisition.",
     },
     {
-      title: "Business Development Associate — Payments",
-      type: "Full-time · Mumbai",
-      summary: "Grow merchant and corporate partnerships across QR, POS, soundbox, and wallet solutions.",
-    },
-    {
-      title: "QA Automation Engineer",
-      type: "Full-time · Mumbai / Remote",
-      summary: "Build automated test coverage across payment flows, devices, and integration APIs.",
+      title: "Business Development Manager – Corporate Tie-ups (MICE)",
+      type: "CTC ₹3–7L",
+      summary:
+        "We are looking for a results-driven Business Development Manager to drive partnerships with travel agencies for tour packages, responsible for identifying and onboarding agencies, negotiating commercial terms, building long-term relationships, and executing sales strategies to maximize bookings. The ideal candidate will have proven experience in travel industry sales, strong networking and negotiation skills, knowledge of Goa's tourism landscape, and the ability to deliver revenue growth through strategic alliances.",
     },
   ],
 };

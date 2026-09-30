@@ -89,3 +89,79 @@ h1, h2, h3, h4, .font-display {
 @keyframes reveal-in {
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ---- Payments Partners marquee (left → right, seamless) ---- */
+.partner-marquee {
+  --logo-scale: 0.85;
+  --marquee-fade: clamp(40px, 12vw, 180px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* soft white fade at both edges so cards ease in/out instead of being cut off */
+.partner-marquee::before,
+.partner-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--marquee-fade);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.partner-marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.85) 30%, rgba(255, 255, 255, 0) 100%);
+}
+
+.partner-marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0.85) 30%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media (min-width: 640px) {
+  .partner-marquee {
+    --logo-scale: 1;
+  }
+}
+
+.partner-marquee-track {
+  animation: partner-marquee-ltr 40s linear infinite;
+  will-change: transform;
+}
+
+.partner-marquee:hover .partner-marquee-track {
+  animation-play-state: paused;
+}
+
+/* 4 identical groups: shifting by exactly one group (25%) loops with no jump */
+@keyframes partner-marquee-ltr {
+  from {
+    transform: translate3d(-25%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-marquee::before,
+  .partner-marquee::after {
+    display: none;
+  }
+  .partner-marquee-track {
+    animation: none !important;
+    width: auto;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .partner-marquee-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .partner-marquee-dup {
+    display: none;
+  }
+}

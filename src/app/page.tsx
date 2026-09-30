@@ -4,6 +4,9 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Container, Eyebrow, PrimaryButton, SecondaryButton, Card, SectionHeading } from "@/components/ui";
 import { StatBar, Testimonials, ContactCTA, FAQSection, PartnershipSection } from "@/components/Sections";
+import { ServiceCategories } from "@/components/ServiceCategories";
+import { PaymentPartnersMarquee } from "@/components/PaymentPartnersMarquee";
+import { ZoompeSection } from "@/components/ZoompeSection";
 import { Icon } from "@/components/IconMap";
 import { services, solutions, whoWeServe, whyChoose, company } from "@/lib/content";
 
@@ -92,6 +95,10 @@ export default function HomePage() {
         </Container>
       </section>
 
+      <PaymentPartnersMarquee />
+
+      <ZoompeSection />
+
       <StatBar />
 
       {/* COMPANY OVERVIEW */}
@@ -156,6 +163,8 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+
+          <ServiceCategories />
         </Container>
       </section>
 

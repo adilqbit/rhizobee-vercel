@@ -16,6 +16,11 @@ import {
   Smartphone,
   Wallet,
   Gift,
+  ArrowLeftRight,
+  Landmark,
+  Receipt,
+  Plane,
+  HandCoins,
   type LucideIcon,
 } from "lucide-react";
 
@@ -37,6 +42,11 @@ export const iconMap: Record<string, LucideIcon> = {
   pos: Smartphone,
   wallet: Wallet,
   gift: Gift,
+  switch: ArrowLeftRight,
+  bank: Landmark,
+  receipt: Receipt,
+  plane: Plane,
+  finance: HandCoins,
 };
 
 export function Icon({ name, className }: { name: string; className?: string }) {

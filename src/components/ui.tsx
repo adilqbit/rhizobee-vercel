@@ -60,9 +60,18 @@ export function SecondaryButton({ href, children }: { href: string; children: Re
   );
 }
 
-export function Card({ children, className = "" }: { children: ReactNode; className?: string }) {
+export function Card({
+  children,
+  className = "",
+  id,
+}: {
+  children: ReactNode;
+  className?: string;
+  id?: string;
+}) {
   return (
     <div
+      id={id}
       className={`rounded-2xl border border-line bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_-15px_rgba(10,26,58,0.15)] ${className}`}
     >
       {children}

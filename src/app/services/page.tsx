@@ -3,6 +3,8 @@ import { CheckCircle2 } from "lucide-react";
 import { PageHero, Container, SectionHeading } from "@/components/ui";
 import { ContactCTA, FAQSection, PartnershipSection } from "@/components/Sections";
 import { Icon } from "@/components/IconMap";
+import { ServiceCategories } from "@/components/ServiceCategories";
+import { ZoompeSection } from "@/components/ZoompeSection";
 import { services } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -56,7 +58,12 @@ export default function ServicesPage() {
             </div>
           ))}
         </Container>
+        <Container className="mt-20">
+          <ServiceCategories />
+        </Container>
       </section>
+
+      <ZoompeSection />
 
       <section className="bg-paper-dim py-24">
         <Container>
